@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+	<head>
+		<meta charset='utf-8'>
+		<meta http-equiv='X-UA-Compatible' content='IE=edge'>
+		<title>WikiDS - Pesquisar</title>
+		<meta name='viewport' content='width=device-width, initial-scale=1'>
+		<link rel='stylesheet' type='text/css' media='screen' href='./src/css/index.css'>
+		<!-- <script src="./js/editor.js"></script> -->
+	</head>
+
+	<body>
+		<header id="header"></header>
+		<main>
+			<section class="container">
+				<search id="main-search" class="shadow-2">
+					<form action="#" method="get">
+						<h2>
+							<label for="search-bar">Vamos fazer uma pesquisa?</label>
+						</h2>
+						<div id="input-search">
+							<input type="text" name="search" id="search-bar" placeholder=". . ." autocomplete="off">
+							<button type="submit">
+								<span class="material-icons">
+									search
+								</span>
+							</button>
+						</div>
+					</form>
+				</search>
+			</section>
+			<section class="container">
+				<h2>Resultados da pesquisa</h2>
+				<div id="search-results" class="ghostie shadow-2">
+					<p class="nothing-here">
+						Nada aqui ainda...
+					</p>
+					<a class="search-item" href="#" id="modelo_div_resultado">
+						<span class="search-title">placeholder de <code class="tag">post</code></span>
+						&vert;
+					</a>
+				</div>
+			</section>
+		</main>
+
+		<div id="notification-tray">
+			<!-- <div class="notification">
+				<p class="notification-title">notificação de exemplo1</p>
+				<p class="notification-body">
+					conteudo
+				</p>
+			</div> -->
+		</div>
+		<script type="module" src="./src/js/main.js"></script>
+		<script type="module" src="./src/js/index.js"></script>
+	</body>
+
+</html>

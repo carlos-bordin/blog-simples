@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+	<head>
+		<meta charset='utf-8'>
+		<meta http-equiv='X-UA-Compatible' content='IE=edge'>
+		<title>WikiDS - Adicionar</title>
+		<meta name='viewport' content='width=device-width, initial-scale=1'>
+		<link rel='stylesheet' type='text/css' media='screen' href='./src/css/adicionar.css'>
+		<!-- <script src="./js/editor.js"></script> -->
+	</head>
+
+	<body>
+		<header id="header"></header>
+		<main>
+			<section class="container">
+				<h2>Adicionar material</h2>
+				<form action="#" method="post" id="createpost">
+					<div class="step1" style="display: block;">
+						<div id="editor"></div>
+						<button type="button" class="btn-next btn-shine-effect" id="goto-step2">
+							<span class="btn-shine-effect-span">Próximo</span>
+						</button>
+					</div>
+					<div class="step2" style="display: none;">
+						<div>
+							<div class="input-control">
+								<label for="post-title">Título</label>
+								<input type="text" name="input-post-title" id="post-title" class="input" required placeholder=". . ." autocomplete="off">
+							</div>
+							<br>
+							<div class="input-control">
+								<label for="tag-selector">Tags de categoria</label>
+								<div id="tag-selector">
+									<div id="selected-tags" class="input">
+										<span class="default-text">escolha ao menos uma tag.</span>
+									</div>
+									<span class="material-icons dropdown-chevron">
+										arrow_forward_ios
+									</span>
+									<div id="tag-dropdown">
+										<button class="html-badge" type="button" data-tagvalue="html">HTML</button>
+										<button class="css-badge" type="button" data-tagvalue="css">CSS</button>
+										<button class="javascript-badge" type="button" data-tagvalue="javascript">JavaScript</button>
+										<button class="uml-badge" type="button" data-tagvalue="uml">UML</button>
+										<button class="desenvolvimentoweb-badge" type="button" data-tagvalue="desenvolvimentoweb">Desenvolvimento Web</button>
+									</div>
+								</div>
+							</div>
+							<button type="submit" class="btn-sendpost btn-shine-effect">
+								<span class="btn-shine-effect-span">Criar material</span>
+							</button>
+						</div>
+						<div id="post-preview">
+							<div id="post-title-preview">. . .</div>
+							<div id="post-content-preview">. . .</div>
+						</div>
+					</div>
+				</form>
+			</section>
+		</main>
+
+		<script type="module" src="./src/js/main.js"></script>
+		<script type="module" src="./src/js/adicionar.js"></script>
+
+	</body>
+
+</html>

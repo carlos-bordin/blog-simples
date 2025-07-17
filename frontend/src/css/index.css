@@ -1,0 +1,98 @@
+@import url(main.css);
+
+#main-search {
+    max-width: 780px;
+    background-color: rgb(27, 27, 27);
+    margin: 2em auto;
+    padding: 2em;
+    color: white;
+}
+
+#main-search h2 {
+    text-align: center;
+    margin-bottom: 1em;
+}
+
+#input-search {
+    width: 100%;
+    height: 86px;
+    display: flex;
+}
+
+#input-search #search-bar {
+    flex-grow: 1;
+    padding: 0.5em 1.5em;
+    font-size: 20px;
+    border-radius: 0;
+    border: 0;
+}
+
+#input-search #search-bar:focus {
+    outline: 0;
+}
+
+#input-search button[type="submit"] {
+    aspect-ratio: 1/1;
+    font-size: 48px;
+    border: 4px solid rgb(62, 74, 232);
+    background-color: rgba(255, 255, 255, 0);
+    color: rgb(62, 74, 232);
+    transition: 200ms;
+}
+
+#input-search button[type="submit"]:hover {
+    border: 4px solid rgb(62, 74, 232);
+    background-color: rgb(62, 74, 232);
+    color: white;
+    cursor: pointer;
+    transition: 200ms;
+}
+
+#search-results {
+    background-color: rgb(238, 238, 238);
+    margin-top: 1em;
+    padding: 2em;
+    min-height: 256px;
+    display: flex;
+    flex-direction: column;
+    gap: 0.3em;
+}
+
+.search-item {
+    padding: 0.5em 2em;
+    background-color: rgba(0, 0, 0, 0.02);
+    transition: 200ms;
+    color: inherit;
+    text-decoration: none;
+    outline: 1px rgba(211, 211, 211, 0) solid;
+    font-size: 0.9em;
+    border-left: 4px lightgray solid;
+}
+
+.search-item:hover {
+    background-color: rgba(0, 0, 0, 0.05);
+    transition: 200ms;
+    margin-left: 0.5em;
+    cursor: pointer;
+    outline: 1px lightgray solid;
+}
+
+.ghostie {
+    background-image: url(../assets/img/ghostie.png);
+    background-repeat: no-repeat;
+    background-size: auto 70%;
+    background-position: 90% 50%;
+    background-blend-mode: difference;
+}
+
+.nothing-here {
+    color: lightgray;
+}
+
+.search-item>.html-badge,
+.css-badge,
+.javascript-badge,
+.desenvolvimentoweb-badge,
+.uml-badge {
+    margin-right: 0.5em;
+}
