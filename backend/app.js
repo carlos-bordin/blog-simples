@@ -34,7 +34,7 @@ async function trazerPostagens(conexao, customquery) {
     } catch (error) {
         console.log(error)
     }
-}
+} 
 
 app.get('/fetch-posts', async (req, res) => {
     var conexao = await conectarDB()
